@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mermaid Diagrams</title>
+</head>
+<body>
+	<h1 style="margin-left:25px">A Basic Left to Right Flowchart</h1> 
+
+	<div class="mermaid" id="lefttoright">
+	graph LR
+    	A(Set Up Your JavaScript Server)-->B(Create an HTML file);
+    	B-->C(Link your JavaScript server and the Mermaid CDN);
+    	C-->D(Write your flowchart);
+    	click D "https://mermaidjs.github.io/#/flowchart" "Click for instructions"
+    	style C fill:#90ee90,stroke:#333,stroke-width:1px;
+	</div>
+	
+	<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+	<script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+</html>
